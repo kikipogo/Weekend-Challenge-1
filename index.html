@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employee Salary Calculator</title>
+  <script src="vendor/jquery.js"></script>
+  <script src="client.js"></script>
+  <link rel='stylesheet' href='styles.css'>
+</head>
+<body>
+  <h1>Employee Salary Calculator</h1>
+  <section>
+    <label for ='firstName'>First Name</label>
+    <input type='text' id='firstName' placeholder='First Name'>
+
+    <label for ='lastName'>Last Name</label>
+    <input type='text' id='lastName' placeholder='Last Name'>
+
+    <label for ='idNumber'>id Number</label>
+    <input type='text' id='idNumber' placeholder='Identification Number'>
+
+    <label for ='jobTitle'>Job Title</label>
+    <input type='text' id='jobTitle' placeholder='Job Title'>
+
+    <label for ='salary'>Salary</label>
+    <input type='number' id='salary' placeholder='Salary'>
+
+    <button type='button' name='button' id='clickMe'>Click Me!</button>
+  </section>
+  <section>
+
+    <label for='employeeList'>Employee List</label>
+
+    <table>
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Annual Salary</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <label for='monthlySalary'>Montly Salary Expenditures:</label>
+    <p id='monthlySalaryValue'></p>
+  </section>
+</body>
+</html>
