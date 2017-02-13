@@ -32,7 +32,7 @@ $(document).ready(function(){
     var lastName = $('#lastName').val();
     var idNumber = $('#idNumber').val();
     var jobTitle = $('#jobTitle').val();
-    var salary = parseInt($('#salary').val()); //parseInt:string to number
+    var salary = parseFloat($('#salary').val()); //parseInt:string to number
     var employee = {
       firstName: firstName,
       lastName: lastName,
@@ -51,8 +51,9 @@ $(document).ready(function(){
   };
 
   //creating an event listener to check if anything happened to clickMe
-  $('#clickMe').on('click', function (){
+  $('#employeeAddForm').on('submit', function (event){
   //on click execute addEmployeeUpdateDOM, updateTable, calculateMonthlySalary
+    event.preventDefault();
     addEmployeeUpdateDOM();
     updateTable();
     calculateMonthlySalary();
