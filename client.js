@@ -12,6 +12,12 @@ $(document).ready(function(){
       tbody.append('<tr><td>'+ oneEmployee.firstName + '</td><td>'+ oneEmployee.lastName + '</td><td>'+ oneEmployee.idNumber + '</td><td>'+ oneEmployee.jobTitle + '</td><td>$ '+ oneEmployee.salary.toFixed(2) + '</td></tr>');
     }
   };
+  /*var str = “”;
+ for (var i = 0; i < employeeArray.length; i++) {
+var oneEmployee = employeeArray[i];
+str += ‘<tr><td>'+ oneEmployee.firstName + '</td><td>'+ oneEmployee.lastName + '</td><td>'+ oneEmployee.idNumber + '</td><td>'+ oneEmployee.jobTitle + '</td><td>$ '+ oneEmployee.salary.toFixed(2) + '</td></tr>'
+}
+body.text(str);*/
 
   //function to iterate over employee array, calculate monthly salary expenditure
   var calculateMonthlySalary = function(){
